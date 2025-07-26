@@ -24,6 +24,5 @@ jobs:
           ssh -i ~/.ssh/id_ed25519 ubuntu@54.147.177.91 '
             cd /home/ubuntu/backend &&
             git pull origin main &&
-            npm install &&
-            npm run build
+            npm install
           '
