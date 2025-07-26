@@ -3,7 +3,7 @@ import {
   getMedicalTourism,
   createMedicalTourism,
   updateMedicalTourism,
-} from "../controllers/medicalTourismcontroller.js";
+} from "../controllers/medicalTourismController.js";
 
 const router = express.Router();
 
