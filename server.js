@@ -27,7 +27,7 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 // Middlewares
 app.use(cors());
@@ -41,7 +41,7 @@ app.get("/", (req, res) => {
 app.use("/api/users", userRoutes);
 app.use("/api/payment-tc", paymentTCRoutes);
 app.use("/api/privacy-policy", privacyPolicyRoutes);
-app.use("/api/footer", footerRoutes);
+app.use("/api/footer", footerRoutes); 
 app.use("/api/blogs", blogRoutes);
 app.use("/api/results", resultRoutes);
 app.use("/api/testimonials", testimonialRoutes);
