@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
 app.use("/api/users", userRoutes);
 app.use("/api/payment-tc", paymentTCRoutes);
 app.use("/api/privacy-policy", privacyPolicyRoutes);
-app.use("/api/footer", footerRoutes); 
+app.use("/api/footer", footerRoutes);
 app.use("/api/blogs", blogRoutes);
 app.use("/api/results", resultRoutes);
 app.use("/api/testimonials", testimonialRoutes);
@@ -59,7 +59,7 @@ app.use("/api/contact", contactRoutes);
 app.use("/api/about", aboutRoutes);
 app.use("/api/home", homeRoutes);
 app.use("/api/upload", uploadRoutes);
-app.use("/api/jobs", jobRoutes);  
+app.use("/api/jobs", jobRoutes);
 
 // MongoDB Connection + Start Server
 mongoose
