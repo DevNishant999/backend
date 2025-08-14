@@ -23,6 +23,7 @@ import contactRoutes from "./routes/contactRoutes.js";
 import aboutRoutes from "./routes/aboutRoutes.js";
 import homeRoutes from "./routes/homeRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
+import jobRoutes from "./routes/jobRoutes.js";
 
 dotenv.config();
 
@@ -58,6 +59,7 @@ app.use("/api/contact", contactRoutes);
 app.use("/api/about", aboutRoutes);
 app.use("/api/home", homeRoutes);
 app.use("/api/upload", uploadRoutes);
+app.use("/api/jobs", jobRoutes);  
 
 // MongoDB Connection + Start Server
 mongoose
